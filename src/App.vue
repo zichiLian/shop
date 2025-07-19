@@ -1,23 +1,32 @@
 <template>
   <!--html-->
   <div class="app">
-    <Head/>
+    <HeadNav/>
+    <TopNavbar/>
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 //JS TS
-import Head from '../src/components/Person.vue'
-export default {
-  name: 'App', //组件名
-  components:{Head}
-}
+import HeadNav from './components/HeadNav.vue'
+import TopNavbar from './components/TopNavbar.vue'
 </script>
 
 <style>
 /*CSS*/
 #app{
+  max-width: none;
+  width:100%;
   display: flex;
   flex-direction: column;
+  padding: 0px;
+}
+.container{
+  width:1226px;
+  margin-left:auto;
+  margin-right:auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 </style>

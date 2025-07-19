@@ -1,5 +1,6 @@
 <template>
 <div class = 'head'>
+  <div class='container'>
     <div class="head_left" >
       <p>{{name}}</p>
       <span> | </span>
@@ -35,62 +36,58 @@
       <span> | </span>
       <p class="shopcar">{{shopcar}}</p>
     </div>
+  </div>
 </div>
 </template>
 
-<script lang="ts"     >
-export default {
-  name:'head',
-  data(){
-    return{
-      name:'小米官网',
-      shop:'小米商城',
-      phone:'小米澎湃OS',
-      car:'小米汽车',
-      cloud:'云服务',
-      lot:'loT',
-      pin:'有品',
-      ai:'小爱开放平台',
-      photo:'资质证照',
-      rule:'协议规则',
-      app:'下载APP',
-      select:'Select Location',
-      login:'登陆',
-      sign:'注册',
-      mail:'消息通知',
-      shopcar:'购物车'
-    }
-},
-  methods:{
-    showTel(){
-      alert(this.login);
-    }
-  }
-}
+<script setup lang="ts">
+const name = '小米官网'
+const shop = '小米商城'
+const phone = '小米澎湃OS'
+const car = '小米汽车'
+const cloud = '云服务'
+const lot = 'loT'
+const pin = '有品'
+const ai = '小爱开放平台'
+const photo = '资质证照'
+const rule = '协议规则'
+const app = '下载APP'
+const select = 'Select Location'
+const login = '登陆'
+const sign = '注册'
+const mail = '消息通知'
+const shopcar = '购物车'
+
 </script>
 
 <style scoped>
-
-.head{
-  display: flex;
+.head {
   background-color: #030303;
   color: #b0b0b0;
   box-shadow: 0 0 10px;
-  width:100%;
-}
-.head_left{
-  display: flex;
-  flex-direction: row;
-}
-.head_left .head_right>p{
-  padding:5px;
-  font-size:12px;
-  /*border-right:#333333 1px solid;*/
-}
-.head_right{
-  margin-left:200px;
-  display: flex;
-  flex-direction: row;
+  width: 100%;
 }
 
+.head_left,
+.head_right {
+  display: flex;
+  align-items: center;
+}
+
+.head_left > p,
+.head_right > p {
+  padding: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.head_left > p:hover,
+.head_right > p:hover {
+  color: white;
+}
+
+.shopcar {
+  font-weight: bold;
+}
 </style>
+
