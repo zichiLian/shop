@@ -125,7 +125,7 @@ const products = {
 
 }
 
-const active = ref(null) //默认不激活
+const active = ref() //默认不激活
 
 
 const getproducts = () => {

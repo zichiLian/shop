@@ -3,6 +3,8 @@
   <div class="app">
     <HeadNav/>
     <TopNavbar/>
+    <ServiceNav/>
+    <Carousel/>
   </div>
 </template>
 
@@ -10,6 +12,8 @@
 //JS TS
 import HeadNav from './components/HeadNav.vue'
 import TopNavbar from './components/TopNavbar.vue'
+import Carousel from "@/components/Carousel.vue";
+import ServiceNav from "@/components/ServiceNav.vue";
 </script>
 
 <style>
