@@ -36,6 +36,12 @@
 
       </div>
     </div>
+<!--      <div>-->
+<!--        用户名<input :value="form.username">-->
+
+<!--        <input :value="form.password" type="password" />-->
+<!--        <button @click="setFormUsername()">set username = hello</button>-->
+<!--      </div>-->
     <div class="search">
       <input
         type="text"
@@ -44,13 +50,26 @@
       <button>
         <span class="icon-search">搜索</span>
       </button>
+
     </div>
       </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import {reactive, ref} from 'vue'
+
+// const form = reactive({
+//   username: '',
+//   password: '',
+// })
+// const form = ref({
+//   username: '',
+//   password: '',
+// })
+// function setFormUsername() {
+//   form.value.username = ''
+// }
 
 const navitems = ref([
   { id: 'phone', name: 'Xiaomi手机',show:true },

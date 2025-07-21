@@ -5,6 +5,7 @@
     <TopNavbar/>
     <ServiceNav/>
     <Carousel/>
+    <ShopMain/>
   </div>
 </template>
 
@@ -14,6 +15,8 @@ import HeadNav from './components/HeadNav.vue'
 import TopNavbar from './components/TopNavbar.vue'
 import Carousel from "@/components/Carousel.vue";
 import ServiceNav from "@/components/ServiceNav.vue";
+import ShopMain from '@/components/ShopMain.vue';
+
 </script>
 
 <style>
@@ -32,5 +35,9 @@ import ServiceNav from "@/components/ServiceNav.vue";
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+}
+.price{
+  font-size:14px;
+  color:#ed732e;
 }
 </style>
