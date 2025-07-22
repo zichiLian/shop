@@ -2,21 +2,24 @@
   <!--html-->
   <div class="app">
     <HeadNav/>
-    <TopNavbar/>
-    <ServiceNav/>
-    <Carousel/>
+    <div v-if="isHomePage"><HomeView/></div>
+    <div v-if="BuyPage"><Buy/></div>
     <ShopMain/>
   </div>
 </template>
 
 <script setup lang="ts">
 //JS TS
+import { useRoute } from 'vue-router'
+import { computed } from 'vue'
+const route = useRoute()
 import HeadNav from './components/HeadNav.vue'
-import TopNavbar from './components/TopNavbar.vue'
-import Carousel from "@/components/Carousel.vue";
-import ServiceNav from "@/components/ServiceNav.vue";
 import ShopMain from '@/components/ShopMain.vue';
+import HomeView from "@/views/HomeView.vue";
+import Buy from '@/views/Buy.vue'
 
+const isHomePage = computed(() => route.path === '/')
+const BuyPage= computed(() => route.path === '/buy')
 </script>
 
 <style>
