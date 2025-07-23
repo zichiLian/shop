@@ -4,6 +4,7 @@
     <HeadNav/>
     <div v-if="isHomePage"><HomeView/></div>
     <div v-if="BuyPage"><Buy/></div>
+    <div v-if="isCart"><Cart/></div>
     <ShopMain/>
   </div>
 </template>
@@ -17,9 +18,11 @@ import HeadNav from './components/HeadNav.vue'
 import ShopMain from '@/components/ShopMain.vue';
 import HomeView from "@/views/HomeView.vue";
 import Buy from '@/views/Buy.vue'
+import Cart from '@/components/Cart.vue'
 
 const isHomePage = computed(() => route.path === '/')
 const BuyPage= computed(() => route.path === '/buy')
+const isCart = computed(() => route.path === '/cart')
 </script>
 
 <style>
