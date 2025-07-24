@@ -2,27 +2,35 @@
   <!--html-->
   <div class="app">
     <HeadNav/>
-    <div v-if="isHomePage"><HomeView/></div>
-    <div v-if="BuyPage"><Buy/></div>
-    <div v-if="isCart"><Cart/></div>
+    <RouterView />
     <ShopMain/>
   </div>
 </template>
 
 <script setup lang="ts">
 //JS TS
-import { useRoute } from 'vue-router'
-import { computed } from 'vue'
-const route = useRoute()
+
+import {computed, ref} from 'vue'
 import HeadNav from './components/HeadNav.vue'
 import ShopMain from '@/components/ShopMain.vue';
 import HomeView from "@/views/HomeView.vue";
 import Buy from '@/views/Buy.vue'
 import Cart from '@/components/Cart.vue'
 
-const isHomePage = computed(() => route.path === '/')
-const BuyPage= computed(() => route.path === '/buy')
-const isCart = computed(() => route.path === '/cart')
+
+const currentPath = ref(window.location.hash)
+window.addEventListener('hashchange', () => {
+  currentPath.value = window.location.hash
+})
+const routes = {
+  '/': HomeView,
+  '/buy': Buy,
+  '/cart': Cart,
+}
+const currentView = computed(() => {
+  return routes[currentPath.value.slice(1) || '/']
+})
+
 </script>
 
 <style>
