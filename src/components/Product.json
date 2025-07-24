@@ -1,0 +1,138 @@
+{
+  "productId": 1,
+  "productType": "phone",
+  "brand": "Xiaomi",
+  "s": "数字系列",
+  "name": "Xiaomi 14 Pro",
+  "subTitle": "徕卡光学影像 | 骁龙8 Gen3 | 小米澎湃OS",
+  "mainImage": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1730124020.85532513.png",
+  "caroImages": [
+    "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1730124020.8676597.png",
+    "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1730124020.81653464.png",
+    "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1730124020.83095417.png"
+  ],
+  "price": {
+    "new": 4999,
+    "old": 5299
+  },
+  "sales": 12345,
+  "del": {
+    "isFree": true,
+    "regions": ["全国"],
+    "time": "预计1-3天送达"
+  },
+  "sizes": {
+    "screen": {
+      "size": "6.73英寸",
+      "type": "AMOLED 2K+"
+    },
+    "chip": "骁龙8 Gen3",
+    "memory": ["8GB", "12GB", "16GB"],
+    "storage": ["128GB", "256GB", "512GB", "1TB"],
+    "battery": "4880mAh",
+    "came": {
+      "main": "5000万像素徕卡主摄",
+      "front": "5000万像素",
+      "telephoto": "5000万像素长焦"
+    }
+  },
+  "colors": [
+    {
+      "id": "c1",
+      "name": "岩石青",
+      "image": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1730124020.8676597.png",
+      "num": 1
+    },
+    {
+      "id": "c2",
+      "name": "雪山粉",
+      "image": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1730124020.8676597.png",
+      "num": 2
+    },
+    {
+      "id": "c3",
+      "name": "经典黑",
+      "image": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1730124020.8676597.png",
+      "num": 3
+    }
+  ],
+  "memories": [
+    {
+      "id": "v1",
+      "name": "8GB+256GB",
+      "price": 4999,
+      "num": 4
+    },
+    {
+      "id": "v2",
+      "name": "12GB+256GB",
+      "price": 5399,
+      "num": 5
+    },
+    {
+      "id": "v3",
+      "name": "16GB+512GB",
+      "price": 5999,
+      "num": 6
+    }
+  ],
+  "services": [
+    {
+      "id": "s1",
+      "name": "小米Care+ 尊享版",
+      "price": 499,
+      "desc": "1年内免费换屏+延保1年"
+    },
+    {
+      "id": "s2",
+      "name": "意外保",
+      "price": 199,
+      "desc": "1年内意外损坏保修"
+    },
+    {
+      "id": "s3",
+      "name": "云空间200GB",
+      "price": "首年免费",
+      "desc": "照片视频自动备份"
+    }
+  ],
+  "promotions": [
+    {
+      "type": "gift",
+      "name": "赠品",
+      "content": "价值199元蓝牙耳机"
+    },
+    {
+      "type": "discount",
+      "name": "限时优惠",
+      "content": "24期免息分期"
+    }
+  ],
+  "details": {
+    "description": "小米14 Pro搭载徕卡Summilux镜头，全新光影猎人900传感器，专业级影像能力。首发骁龙8 Gen3处理器，小米澎湃OS系统。",
+    "specTable": [
+      {"key": "上市时间", "value": "2023年10月"},
+      {"key": "产品尺寸", "value": "163.6×74.6×8.49mm"},
+      {"key": "重量", "value": "223g"}
+    ],
+    "images": [
+      "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1730124020.8676597.png",
+      "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1730124020.8676597.png"
+    ]
+  },
+  "tags": ["新品", "旗舰", "徕卡", "骁龙8Gen3"],
+  "GuessProducts": [
+    {
+      "id": "1000002",
+      "name": "Xiaomi 14",
+      "price": 3999,
+      "image": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1730124020.8676597.png"
+    },
+    {
+      "id": "1000003",
+      "name": "Xiaomi Buds 4 Pro",
+      "price": 999,
+      "image": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1730124020.8676597.png"
+    }
+  ]
+}
